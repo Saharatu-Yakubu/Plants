@@ -1,0 +1,140 @@
+.nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    background-color: rgb(10, 87, 10);
+
+}
+
+.nav h3 {
+    color: whitesmoke;
+}
+
+ul li {
+    list-style-type: none;
+    color: whitesmoke;
+    padding-left: 40px;
+
+}
+
+ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+.do ul {
+    display: flex;
+    padding-right: 200px;
+    
+}
+
+.heroimage {
+    height: 800;
+    width: 100%;
+}
+
+.mother {
+    display: flex;
+    margin-top: 60px;
+    
+}  
+
+.mother h1{
+    text-align: center;
+    color:  rgb(10, 87, 10);
+    text-decoration: underline;
+}
+
+main {
+    width: 50%;
+    padding-right: 150px;
+    margin-top: 40px;
+    
+}
+
+aside {
+    width: 50%;
+}
+
+.grayarea {
+    height: 2600px;
+    width: 100%;
+    align-content: center;
+    background-color: rgb(241, 247, 241);
+}
+
+.grayarea h1 {
+    font-size: 60px;
+    padding-top: 45px;
+    color:  rgb(10, 87, 10);
+
+}
+
+.body {
+    margin: 150px;
+
+
+}
+.body h1 {
+    font-size: 60px;
+    padding-top: 45px;
+    color:  rgb(10, 87, 10);
+
+}
+
+.gridcontainer {
+    --gap: 10px;
+    --num-cols: 4;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols)), 1fr;
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.gridcontainer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+
+
+@media screen and (max-width: 104px){
+    .gridcontainer {
+        --num-col: 2;
+        --row-height: 200px;
+    }
+}
+
+.background {
+    background-image: url("images/23.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -30px;
+    height: 700px;
+    width: 100%;
+}
+
+.background h1 {
+    font-size: 30px;
+    padding-top: 45px;
+    padding-right: 299;
+    color:  rgb(10, 87, 10);
+}
+
+.footer {
+    height: 40px;
+    background-color: rgb(6, 15, 6);
+}
